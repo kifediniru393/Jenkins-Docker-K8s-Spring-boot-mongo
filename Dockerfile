@@ -1,4 +1,4 @@
-FROM openjdk:21-ea-24-jdk-windowsservercore-ltsc2022
+FROM ryebrye/8-alpine-jdk-node84-mvn35:latest
 
 # Required for starting application up....
 RUN apk update && apk add /bin/sh
