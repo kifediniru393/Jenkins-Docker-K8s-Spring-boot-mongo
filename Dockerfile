@@ -1,4 +1,4 @@
-FROM openjdk:8-alpine
+FROM openjdk:21-ea-24-jdk-windowsservercore-ltsc2022
 
 # Required for starting application up....
 RUN apk update && apk add /bin/sh
