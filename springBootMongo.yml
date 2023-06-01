@@ -62,7 +62,7 @@ spec:
       - name: springappcontainer
         image: kniru/acada_spring_mongo:v1
       imagePullSecrets:
-        - name: myregistrykey
+         - name: myregistrykey
         ports:
         - containerPort: 8080
         env:
