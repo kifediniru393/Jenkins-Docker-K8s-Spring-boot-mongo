@@ -60,9 +60,11 @@ spec:
     spec:
       containers:
       - name: springappcontainer
-        image: acadalearning/spring-boot-mongo
+        image: kniru/acada_spring_mongo:v1
         ports:
         - containerPort: 8080
+      imagePullSecrets:
+         - name: myregistrykey
         env:
         - name: MONGO_DB_USERNAME
           valueFrom:
